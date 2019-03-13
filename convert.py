@@ -3,7 +3,7 @@
 Reads Darknet config and weights and creates Keras model with TF backend.
 
 """
-
+from remote_pdb import set_trace
 import argparse
 import configparser
 import io
@@ -50,6 +50,7 @@ def unique_config_sections(config_file):
                 _section = section + '_' + str(section_counters[section])
                 section_counters[section] += 1
                 line = line.replace(section, _section)
+            set_trace()
             output_stream.write(line)
     output_stream.seek(0)
     return output_stream
