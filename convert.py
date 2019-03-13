@@ -3,7 +3,7 @@
 Reads Darknet config and weights and creates Keras model with TF backend.
 
 """
-from remote_pdb import set_trace
+from IPython.core.debugger import set_trace
 import argparse
 import configparser
 import io
